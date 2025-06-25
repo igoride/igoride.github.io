@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Meu Blog Pessoal</title>
+
+</head>
+
+<body>    
+
+    <nav class="navbar">
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        
+        <ul class="menu-items" id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <!--<li><a href="portfolio.html">Portfólio</a></li>-->
+            <div class="github-icon">
+                <a href="https://github.com/" target="_blank">
+                    <img src="Imagens/github.png" alt="Github">
+                </a>
+            </div>
+        </ul>
+
+        
+
+    </nav>
+
+    <header class="header">
+        
+        <img src="Imagens/logo.png">
+        <h1>Meu Blog Pessoal</h1>
+        <p>Compartilhando ideias, projetos e aprendizados</p>
+        
+    </header>
+
+    <main class="container">
+
+        <article class="post">
+            <h2 class="post-title">Meu Primeiro Projeto em JavaScript</h2>
+            <div class="post-meta">Publicado em 15 de Junho de 2025 | Categoria: Programação</div>
+            <img src="imagens/velha.png" alt="Código JavaScript" class="post-image">
+            <div class="post-content">
+                <p>Recentemente comecei a aprender JavaScript e decidi criar meu primeiro projeto: um simples jogo da velha. Foi desafiador, mas extremamente gratificante ver o código funcionando...</p>
+            </div>
+            <a href="post1.html" class="read-more">Ler mais</a>
+        </article>
+
+        <article class="post">
+            <h2 class="post-title">Minha Primeira Experiência com Photoshop</h2>
+            <div class="post-meta">Publicado em 5 de Junho de 2025 | Categoria: Design</div>
+            <img src="imagens/photoshop.png" alt="Design" class="post-image">
+            <div class="post-content">
+                <p>Na faculdade comecei a aprender Design e meu primeiro projeto foi colocar ...</p>
+            </div>
+            <a href="post2.html" class="read-more">Ler mais</a>
+        </article>
+
+        <div class="about">
+            <h2>Sobre</h2>
+            <img src="imagens/perfilredondo.png" alt="Minha Foto" >
+            <p>Olá! Sou desenvolvedor e apaixonado por tecnologia. Este blog é meu espaço para compartilhar conhecimentos e experiências.</p>
+        </div>
+
+    </main>
+
+    
+
+    <footer class="footer">
+
+        <div class="container">
+            <p>&copy; 2025 Meu Blog Pessoal.</p>
+        </div>
+
+        <a href="#"><img id="r1" src="imagens/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img id="r2" src="Imagens/github.png" alt="Github"></a>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuItems = document.getElementById('menuItems');
+            menuItems.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>

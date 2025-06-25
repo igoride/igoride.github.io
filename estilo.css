@@ -1,0 +1,267 @@
+/* Reset e Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /*background: linear-gradient(to right, RGB(110, 175, 233), RGB(110, 175, 233));*/
+    background-color: #006494;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* --------------------------Navbar------------------------------ */
+
+.navbar {
+    background-color: #13293d;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    justify-content: space-evenly;
+    float: none;
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+.menu-items li {
+    margin: 0 10px;
+    width: 100px;
+    justify-content: center;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu-items a:hover {
+    border-radius: 10%;
+    background-color: #006494;
+}
+
+.github-icon {
+    position: relative;
+    float: left;
+}
+
+.github-icon img {
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    float:left;
+}
+
+.github-icon img:hover {
+    transform: scale(1.1);
+}
+/* -------------------------Cabeçalho------------------------------- */
+
+.header {
+    display: flex;
+    padding: 3%;
+    background-color:#e8f1f2;
+    margin-bottom: 30px;
+}
+
+.header img {
+    width: 10%;
+    height: 5%;
+    margin-bottom: -12%;
+    margin-top: -2%;
+    margin-right: 5.3%;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+
+/* ------------------------- Principal ------------------------------- */
+main {
+    flex: 1;
+    padding: 20px 0;
+    width: 70%;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-title {
+    color: #2a6496;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.post-featured-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #01c38e;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: green;
+}
+/* ------------------------- Sobre ------------------------------- */
+
+.about{
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    color: #2a6496;
+    margin-left: 5%;
+    margin-bottom: -3%;
+}
+
+.about img {
+    width: 30%;
+    float: left;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: -10%;
+}
+
+.about p {
+    text-align: justify;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------- */
+/* Rodapé */
+.footer {
+    background-color: #13293d;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+.footer img{
+    margin-top: -2%;
+    margin-bottom: -1%;
+    transition-delay: 3ms;
+}
+
+.footer a{
+    width: 200px;
+    height: 200px;
+}
+
+#r1{
+    position: relative;
+    left: 15%;
+    width: 5%;
+    height: auto;
+}
+
+#r2{
+    position: relative;
+    left: 20%;
+    width: 5%;
+    height: auto;
+   
+}
+
+.footer img:hover {
+    transform: scale(1.2);
+}
+
+/*-----------------------Responsividade----------------------------*/
+@media (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #13293d;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+    
+    .menu-items li {
+        margin: 0;
+        text-align: center;
+    }
+}
